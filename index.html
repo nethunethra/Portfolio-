@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Srinethra R | Cyber Security Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#eef2f6; --surface:#ffffff; --ink:#0f2236; --muted:#52657a; --line:#cfd8e2; --accent:#0b6e6e; --signal:#c2410c; --tint:#dcebea;
+  --display:'Bricolage Grotesque','Segoe UI',Arial,sans-serif;
+  --body:'Instrument Sans','Segoe UI',Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0d1824;--surface:#14243a;--ink:#e8eef5;--muted:#9fb1c4;--line:#27405c;--accent:#4fd1c5;--signal:#fb923c;--tint:#143a42}
+}
+:root[data-theme="dark"]{--bg:#0d1824;--surface:#14243a;--ink:#e8eef5;--muted:#9fb1c4;--line:#27405c;--accent:#4fd1c5;--signal:#fb923c;--tint:#143a42}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:22px;flex-wrap:wrap;padding:22px 0;font-weight:500}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+nav .name{color:var(--ink);font-family:var(--display);font-weight:800;margin-right:auto;font-size:19px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:56px 0 72px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(46px,8vw,92px);line-height:.98;margin:0 0 20px;letter-spacing:-.03em}
+.lead{font-size:20px;color:var(--muted);max-width:30em;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+.log{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--signal);border-radius:6px;padding:6px 0;overflow-x:auto}
+.log h2{font-family:var(--display);font-size:16px;margin:0;padding:12px 20px;border-bottom:1px solid var(--line);color:var(--muted);font-weight:700}
+.row{display:grid;grid-template-columns:92px 1fr;gap:14px;padding:13px 20px;border-bottom:1px solid var(--line);font-size:15px}
+.row:last-child{border-bottom:0}
+.row time{color:var(--signal);font-weight:600}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2.t{font-family:var(--display);font-size:clamp(28px,4vw,40px);margin:0 0 28px;letter-spacing:-.02em;line-height:1.1}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:32px;max-width:100%}
+.proj h3{font-family:var(--display);font-size:26px;margin:0 0 12px;line-height:1.2}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}
+.chips li{background:var(--tint);color:var(--ink);padding:4px 12px;border-radius:99px;font-size:14px;font-weight:500}
+.proj ul.pts{margin:0;padding-left:20px}
+.proj ul.pts li{margin-bottom:10px;max-width:62ch}
+.skills h3,.col h3{font-family:var(--display);font-size:20px;margin:0 0 12px}
+.item{margin-bottom:22px}
+.item b{display:block;font-weight:600}
+.item span{color:var(--muted);font-size:15px}
+footer{padding:56px 0 64px;border-top:1px solid var(--line)}
+footer a{font-weight:600}
+.contact{display:flex;flex-wrap:wrap;gap:12px 36px;margin:0;padding:0;list-style:none}
+@media (max-width:760px){
+  .hero,.two{grid-template-columns:1fr;gap:32px}
+  .hero{padding-top:32px}
+  .row{grid-template-columns:1fr;gap:2px}
+  .proj{padding:22px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main">
+  <a class="name" href="#top">Srinethra R</a>
+  <a href="#project">Project</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header class="hero" id="top">
+  <div>
+    <h1>Srinethra R</h1>
+    <p class="lead">Computer Science undergraduate specializing in Cyber Security, focused on security monitoring, log analysis and networking.</p>
+    <div class="btns">
+      <a class="btn main" href="#project">See my project</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <aside class="log" aria-label="Recent activity">
+    <h2>Activity log</h2>
+    <div class="row"><time>May–Jun 2026</time><div>Internship at Prefenzo Technologies, Palladam</div></div>
+    <div class="row"><time>Feb–Apr 2026</time><div>Internship with Livewire Innovote Learn Lead</div></div>
+    <div class="row"><time>Project</time><div>Wazuh SIEM deployed across multiple endpoints</div></div>
+    <div class="row"><time>Certified</time><div>Cyber Security (Swayam Plus) and Information Security (Infosys Springboard)</div></div>
+  </aside>
+</header>
+
+<section id="about">
+  <h2 class="t">About me</h2>
+  <p style="max-width:62ch;margin:0">I am pursuing a Bachelor of Computer Science with Cyber Security at Dr. N.G.P. Arts and Science College, Coimbatore. I learn quickly, communicate clearly and work well in a team. I am looking for an opportunity to apply my technical knowledge, build my skills and contribute to an organization's growth.</p>
+</section>
+
+<section id="project">
+  <h2 class="t">Project</h2>
+  <article class="proj">
+    <h3>Enterprise SOC SIEM Deployment and Threat Monitoring using Wazuh</h3>
+    <ul class="chips" aria-label="Tools used">
+      <li>Cybersecurity</li><li>Wazuh</li><li>Linux</li><li>Windows</li><li>SIEM dashboard</li>
+    </ul>
+    <ul class="pts">
+      <li>Implemented a real-time SIEM solution with Wazuh to monitor and analyze security events in a virtualized environment.</li>
+      <li>Configured the Wazuh Manager and Dashboard, and deployed agents across multiple endpoints for centralized log collection and monitoring.</li>
+      <li>Analyzed logs, detected threats, and monitored file integrity and system activity to support incident response.</li>
+    </ul>
+  </article>
+</section>
+
+<section id="experience">
+  <h2 class="t">Experience and certifications</h2>
+  <div class="two">
+    <div class="col">
+      <h3>Internships</h3>
+      <div class="item"><b>Prefenzo Technologies Pvt. Ltd., Palladam</b><span>Offline, one month: May 4 to June 8, 2026</span></div>
+      <div class="item"><b>Livewire Innovote Learn Lead</b><span>Offline, 20 days at Dr. N.G.P. Arts and Science College, Coimbatore: February 17 to April 7, 2026</span></div>
+    </div>
+    <div class="col">
+      <h3>Certifications</h3>
+      <div class="item"><b>Cyber Security</b><span>Swayam Plus, course organized by SkillDzire</span></div>
+      <div class="item"><b>Fundamentals of Information Security</b><span>Infosys, organized by Springboard</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <h2 class="t">Skills</h2>
+  <div class="two">
+    <div>
+      <h3>Technical</h3>
+      <ul class="chips">
+        <li>Wazuh (SIEM and security monitoring)</li><li>Wireshark (network packet analysis)</li><li>Microsoft Office Suite</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Interpersonal</h3>
+      <ul class="chips">
+        <li>Collaboration</li><li>Adaptability</li><li>Time management</li><li>Attention to detail</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="t">Education and achievements</h2>
+  <div class="two">
+    <div class="col">
+      <h3>Education</h3>
+      <div class="item"><b>Dr. N.G.P. Arts and Science College</b><span>Currently pursuing a Bachelor of Computer Science with Cyber Security</span></div>
+      <div class="item"><b>S V G V Matriculation Higher Secondary School</b><span>Completed HSC II, HSC I and SSLC</span></div>
+    </div>
+    <div class="col">
+      <h3>Achievements</h3>
+      <div class="item"><b>1st place, zonal chess competition</b></div>
+      <div class="item"><b>1st place, zonal school basketball</b><span>Represented the school team and qualified for the district-level tournament</span></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2 class="t">Contact</h2>
+    <ul class="contact">
+      <li><a href="mailto:srinethra46@gmail.com">srinethra46@gmail.com</a></li>
+      <li><a href="tel:+919894827947">+91 98948 27947</a></li>
+      <li><a href="https://www.linkedin.com/in/srinethra-r" rel="noopener">LinkedIn</a></li>
+      <li>Coimbatore, Tamil Nadu, India</li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
